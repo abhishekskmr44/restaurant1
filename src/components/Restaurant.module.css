@@ -1,0 +1,106 @@
+.mainCard{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color:rgb(36, 16, 26);
+}
+.mainCardUpper{
+    display: flex;
+    width:100%;
+    /* border: 1px solid rgb(2, 124, 39); */
+}
+.mainCardUpper>div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    /* border: 1px solid rgb(85, 84, 5); */
+}
+.mainCardUpper>div:nth-child(1){
+    width:30%;
+}
+.mainCardUpper>div:nth-child(2){
+    width:50%;
+    color: rgba(232, 15, 138, 0.801);
+}
+.mainCardUpper>div:nth-child(3){
+    width:20%;
+}
+.mainCardUpperLeft{
+    width:100%;
+}
+.mainCardUpperLeft>img{
+    width:100%;
+    border-radius: 10px;
+}
+.mainCardUpperMiddle>p{
+    margin-top: 0px;
+}
+.mainCardUpperMiddle>p:nth-child(1){
+    color: rgb(220, 110, 20);
+    font-weight:500;
+
+}
+.mainCardUpperRight{
+    padding: 1%;
+}
+.mainCardUpperRight>div{
+    margin-top: 15px;
+    color: rgb(225, 21, 52);
+}
+.mainCardUpperRight>div:nth-child(1){
+    height: 30px;
+    width: 30px;
+    border-radius:10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color:rgba(42, 42, 192, 0.947)
+}
+.mainCardLower{
+    width:96%;
+    background-color: rgb(229, 222, 240);
+    color: rgb(27, 102, 214);
+    padding: 2%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.cardContainer{
+    width:98%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1%;
+    padding: 1%;
+    
+}
+.mainHeader{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+
+@media (max-width:1200px) {
+    .mainHeader{
+        grid-template-columns: repeat(5,1fr)
+    }
+    .cardContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:850px) {
+    .mainHeader{
+        grid-template-columns: repeat(4,1fr)
+    }
+    .cardContainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width:600px) {
+    .mainHeader{
+        grid-template-columns: repeat(3,1fr)
+    }
+}
